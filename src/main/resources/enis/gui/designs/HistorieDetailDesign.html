@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout spacing="false" responsive>
+   <vaadin-vertical-layout responsive size-auto margin="false">
+    <vaadin-horizontal-layout responsive>
+     <vaadin-label caption="ID" style-name="colored bold large" responsive plain-text _id="lblId">
+       Label 
+     </vaadin-label>
+     <vaadin-label caption="Uživatel" style-name="colored bold large" responsive plain-text _id="lblUzivatel">
+       Label 
+     </vaadin-label>
+     <vaadin-label caption="Operace" style-name="colored bold large" responsive plain-text _id="lblOperace">
+       Label 
+     </vaadin-label>
+     <vaadin-label caption="Datum změny" style-name="colored bold large" plain-text _id="lblDatumZmeny" :center>
+       Label 
+     </vaadin-label>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout spacing="false" size-full margin="false">
+    <vaadin-text-area size-full _id="textDetail"></vaadin-text-area>
+   </vaadin-vertical-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

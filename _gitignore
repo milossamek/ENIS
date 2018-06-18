@@ -1,0 +1,19 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+.tern-project
+.vaadin-designer2
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/

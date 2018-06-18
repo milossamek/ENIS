@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+  <meta name="package-mapping" content="enis_gui_form:enis.gui.form">
+ </head>
+ <body>
+  <vaadin-vertical-layout style-name="crud-template" spacing="false" responsive size-full margin="false">
+   <vaadin-horizontal-layout width-full>
+    <enis_gui_form-logout-form :right></enis_gui_form-logout-form>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout style-name="top-bar" spacing="false" width-full height="50px">
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7b0" style-name="borderless" plain-text _id="btnList">
+      Zpět 
+    </vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e801" style-name="borderless" plain-text _id="addButton" :middle :right>
+      Add new 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+   <vaadin-css-layout style-name="content" size-full :expand>
+    <vaadin-css-layout style-name="list" size-full>
+     <vaadin-grid caption="Seznam uzivatelu" size-full data-item-type="enis.backend.model.Uzivatel" _id="grid">
+      <table>
+       <colgroup>
+        <col column-id="id" sortable>
+        <col column-id="jmeno" sortable>
+        <col column-id="heslo" sortable>
+        <col column-id="role" sortable>
+       </colgroup>
+       <thead>
+        <tr default>
+         <th plain-text column-ids="id">Id</th>
+         <th plain-text column-ids="jmeno">Jmeno</th>
+         <th plain-text column-ids="heslo">Heslo</th>
+         <th plain-text column-ids="role">Role</th>
+        </tr>
+       </thead>
+       <tbody></tbody>
+      </table>
+     </vaadin-grid>
+    </vaadin-css-layout>
+   </vaadin-css-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

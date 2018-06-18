@@ -1,0 +1,27 @@
+  	.v-label-success, .v-label-failure {
+		background: white;
+		color: #474747;
+		border: 2px solid #2c9720;
+		border-radius: 4px;
+		padding: 5px 13px 5px 26px;
+		font-weight: 400;
+		font-size: 11px;
+	}
+
+	
+	.v-label-success:before, .v-label-failure:before {
+		font-family: FontAwesome;
+		content: "\f00c";
+		margin-right: 0.5em;
+		margin-left: -13px;
+		color: #2c9720;
+	}
+
+	.v-label-failure {
+		border-color: #ed473b;
+	}
+	
+	.v-label-failure:before {
+		content: "\f05e";
+		color: #ed473b;
+	}
